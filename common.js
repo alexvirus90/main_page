@@ -34,6 +34,9 @@ $(document).ready(function () {
 		if(($('#Username').val() === '') || ($('#Password').val() === '')){
 			$('#modalError').modal('show');
 			$('#myModal').modal('hide');
+			$('#modalError .modal-body').html('<p class="errorText">\n' +
+				'\t\t\t\t\t* Поля, \'имя пользователя\' и/или \'пароль\' не доджны быть пустыми!\n' +
+				'\t\t\t\t</p>');
 		}
 	});
 
