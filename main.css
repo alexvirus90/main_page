@@ -6,9 +6,6 @@ body .container {
 	max-width: 1920px;
 }
 
-body .modal.show .modal-dialog{
-	transform: translate(0, 100%);
-}
 html body #modalError{
 	display: none;
 }

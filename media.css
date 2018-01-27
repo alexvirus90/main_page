@@ -2,27 +2,15 @@
 	body .container {
 		max-width: 1439px;
 	}
-	.janitor,
-	.car,
-	.ambulance,
-	.fortress {
-		height: 456.5px;
-	}
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
 	body .container {
 		max-width: 1279px;
 	}
-	body .modal.show .modal-dialog {
-		transform: translate(0, 70%);
-	}
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 	body .container {
 		max-width: 1023px;
-	}
-	body .modal.show .modal-dialog {
-		transform: translate(0, 70%);
 	}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -36,9 +24,6 @@
 		background: none;
 		background-color: #E6EBF0;
 	}
-	body .modal.show .modal-dialog {
-		transform: translate(0, 0%);
-	}
 }
 @media only screen and (min-width: 320px) and (max-width: 575px) {
 	body .container {
@@ -50,8 +35,5 @@
 	.fortress {
 		background: none;
 		background-color: #E6EBF0;
-	}
-	body .modal.show .modal-dialog {
-		transform: translate(0, 0%);
 	}
 }

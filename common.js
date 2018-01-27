@@ -1,8 +1,21 @@
 $(document).ready(function () {
 
-	var height = $(window).height();
-	var heightCell = height / 2;
-	$('.janitor, .car, .ambulance, .fortress').css('height', heightCell);
+	$(window).ready( function () {
+		var height = $(window).height();
+		var transform = (height - 298) / 2.5;
+		$('body .modal.show .modal-dialog').css('transform', 'translate(0,' + transform + 'px)');
+	});
+	function rsM() {
+		var height = $(window).height();
+		var heightCell = height / 2;
+		var transform = (height - 298) / 2.5;
+		$('body .modal.show .modal-dialog').css('transform', 'translate(0,' + transform + 'px)');
+		$('.janitor, .car, .ambulance, .fortress').css('height', heightCell);
+	}
+	rsM();
+	$(window).resize(function () {
+		rsM();
+	});
 
 	$('#Password').keypress(function(e) {
 		if(e.which == 13) {
