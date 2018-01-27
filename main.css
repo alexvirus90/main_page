@@ -5,11 +5,15 @@ body .container, body .row, body .col {
 body .container {
 	max-width: 1920px;
 }
-body #myModal{
-	display: none;
-}
+
 body .modal.show .modal-dialog{
 	transform: translate(0, 100%);
+}
+html body #modalError{
+	display: none;
+}
+.errorText{
+	color: red;
 }
 #myModal .add-clear-span {
 	width: 425px;

@@ -26,6 +26,20 @@ $(document).ready(function () {
 	$('#modalError').modal({
 		keyboard: false,
 		backdrop: false,
+		show: false
+	});
+
+
+	$('#save').on('click', function () {
+		if(($('#Username').val() === '') || ($('#Password').val() === '')){
+			$('#modalError').modal('show');
+			$('#myModal').modal('hide');
+		}
+	});
+
+	$('#repeat').on('click', function () {
+		$('#modalError').modal('hide');
+		$('#myModal').modal('show');
 	});
 
 	$(".clear").addClear({
