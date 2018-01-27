@@ -1,0 +1,107 @@
+body .container, body .row, body .col {
+	padding: 0;
+	margin: auto;
+}
+body .container {
+	max-width: 1920px;
+}
+body #myModal{
+	display: none;
+}
+body .modal.show .modal-dialog{
+	transform: translate(0, 100%);
+}
+#myModal .add-clear-span {
+	width: 425px;
+}
+#myModal .add-clear-span input {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	margin-bottom: 0;
+}
+.modal .modal-dialog .modal-body {
+	padding: 0 1rem;
+}
+.modal .modal-dialog .modal-body form {
+	padding-top: 16px;
+}
+.maxlength-feedback{
+	display: none;
+}
+.checkbox {
+	position: absolute;
+	opacity: 0;
+	float: right;
+}
+.checkbox + label {
+	position: relative;
+	cursor: pointer;
+	padding: 0;
+	float: right;
+}
+.checkbox + label:before {
+	content: "";
+	border: 1px solid gray;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	width: 20px;
+	height: 20px;
+	background: white;
+}
+.checkbox:hover + label:before {
+	background: #e9ecef;
+}
+.checkbox:checked + label:before {
+	background: #e9ecef;
+}
+.checkbox:disabled + label {
+	color: #b8b8b8;
+	cursor: auto;
+}
+.checkbox:disabled + label:before {
+	box-shadow: none;
+	background: #ddd;
+}
+.checkbox:checked + label:after {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 9px;
+	background: gray;
+	width: 2px;
+	height: 2px;
+	box-shadow: 2px 0 0 gray, 4px 0 0 gray, 4px -2px 0 gray, 4px -4px 0 gray, 4px -6px 0 gray, 4px -8px 0 gray;
+	transform: rotate(45deg);
+}
+.modal .modal-footer button:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.janitor,
+.car,
+.ambulance,
+.fortress {
+	height: 494.5px;
+}
+.janitor {
+	background: url("images/janitor.jpg") no-repeat;
+	background-size: 100% 100%
+}
+.car {
+	background: url("images/car.jpg") no-repeat;
+	background-size: 100% 100%
+}
+.ambulance {
+	background: url("images/ambulance.jpg") no-repeat center;
+	background-size: 80% 100%
+}
+.fortress {
+	background: url("images/fortress.jpg") no-repeat;
+	background-size: 100% 100%
+}
