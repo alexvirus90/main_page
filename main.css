@@ -99,19 +99,34 @@ html body #modalError{
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
-.janitor {
-	background: url("images/janitor.jpg") no-repeat;
-	background-size: 100% 100%
+.janitor{
+	background: url("images/janitor.jpg") no-repeat center center;
+	background-size: 80% auto;
 }
 .car {
-	background: url("images/car.jpg") no-repeat;
-	background-size: 100% 100%
+	background: url("images/car.jpg") no-repeat center center;
+	background-size:  80% auto ;
 }
 .ambulance {
-	background: url("images/ambulance.jpg") no-repeat center;
-	background-size: 80% 100%
+	background: url("images/car1.jpg") no-repeat center center;
+	background-size: 80% auto;
 }
 .fortress {
-	background: url("images/fortress.jpg") no-repeat;
-	background-size: 100% 100%
+	background: url("images/fortress.jpg") no-repeat center center;
+	background-size: 80% auto  ;
+}
+.pass a{
+	right: 50px !important;
+}
+#show_password{
+	position: absolute;
+	right: 6px;
+	background-color: #e9ecef;
+	border: 1px solid #ced4da;
+}
+#show_password:focus{
+	box-shadow: none;
+}
+#show_password i{
+	color: #495057;
 }

@@ -38,11 +38,16 @@
 					</div>
 					<div class="form-group has-feedback">
 						<div class="col-xs-6">
-							<div class="input-group">
-								<div class="input-group-prepend">
+							<div class="input-group pass">
+								<div class="input-group-prepend ">
 									<span class="input-group-text" id="inputGroupPrepend2"><i class="fa fa-key"></i></span>
 								</div>
 								<input type="password" class="clear form-control" name="password" id="Password" placeholder="Пароль" aria-describedby="inputGroupPrepend2" required="">
+								<span class="input-group-btn">
+									<button id= "show_password" class="btn btn-secondary" type="button">
+										<i class="fa fa-eye"></i>
+									</button>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -56,7 +61,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="modal fade" id="modalError" tabindex="-1">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -70,7 +74,6 @@
 		</div>
 	</div>
 </div>
-
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bootstrap/tether.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>

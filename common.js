@@ -16,7 +16,6 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		rsM();
 	});
-
 	$('#Password').keypress(function(e) {
 		if(e.which == 13) {
 			$('#save').click();
@@ -78,7 +77,6 @@ $(document).ready(function () {
 	}
 	$('#checkboxID').click(function() {
 		if ($('#checkboxID').is(':checked')) {
-			// save username and password
 			localStorage.usrname = $('#Username').val();
 			localStorage.pass = $('#Password').val();
 			localStorage.chkbx = $('#checkboxID').val();
@@ -88,4 +86,12 @@ $(document).ready(function () {
 			localStorage.chkbx = '';
 		}
 	});
+	$('#show_password').hover(function() {
+			$('#Password').attr('type', 'text');
+			$('#show_password .fa').removeClass('fa-eye').addClass('fa-eye-slash');
+		}, function () {
+			$('#Password').attr('type', 'password');
+			$('#show_password .fa').removeClass('fa-eye-slash').addClass('fa-eye');
+		}
+	);
 });

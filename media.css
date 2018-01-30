@@ -12,6 +12,13 @@
 	body .container {
 		max-width: 1023px;
 	}
+	.janitor,
+	.car,
+	.ambulance,
+	.fortress {
+		background: none;
+		background-color: #E6EBF0;
+	}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 	body .container {
@@ -29,6 +36,15 @@
 	body .container {
 		max-width: 575px;
 	}
+	.janitor,
+	.car,
+	.ambulance,
+	.fortress {
+		background: none;
+		background-color: #E6EBF0;
+	}
+}
+@media only screen and (max-height: 700px) {
 	.janitor,
 	.car,
 	.ambulance,
